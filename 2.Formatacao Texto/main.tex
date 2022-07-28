@@ -1,0 +1,36 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc} % Pacote para acentuação
+\usepackage[portuguese]{babel} % Para quem vai escrever em PT-PT
+\usepackage[lmargin=2cm,tmargin=3cm,rmargin=2cm,bmargin=2cm]{geometry}
+\usepackage[T1]{fontenc} % Ajusta o texto que vem de outras fontes, por ex copy de texto de pdf, site, ou doc, o texto vem  cheio de caracteres e o latex "elimina" esses caracteres a mais
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont,mathtools} % Pacotes matematicos
+\usepackage{blindtext} % Texto aleatório
+
+\title{Formatação de Texto}
+\author{Rafael Alves}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Exemplo de um Tópico/Secção}
+\subsection{Subsection da section}
+\blindtext
+
+\begin{center}
+\textbf{ % Texto em negrito
+\blindtext} % Texto alinhado ao centro
+\end{center}
+
+
+\begin{flushright} % Alinhado a direita (esquerda:flushleft)
+\textit{ % Texto em italico
+\underline{Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla} Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla Hoje bla bla bla Hoje.}
+\end{flushright}
+
+
+\subsection{Outra Subsection}
+\textbf{\underline{Hoje etc etc etc Hoje etc etc}} etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc Hoje etc etc etc 
+
+\end{document}
