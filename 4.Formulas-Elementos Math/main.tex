@@ -1,0 +1,91 @@
+\documentclass[12pt,a4paper,twoside]{report}
+%\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc} % Pacote para acentuação
+\usepackage[portuguese]{babel} % Para quem vai escrever em PT-PT
+\usepackage[a4paper,width=150mm,top=20mm,bottom=20mm]{geometry}
+%\usepackage[lmargin=2cm,tmargin=2cm,rmargin=2cm,bmargin=2cm]{geometry}
+\usepackage{indentfirst} % Identacao primeiro paragrafo
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont,mathtools} % Pacotes matematicos
+
+
+
+\title{Fórmulas e Elementos Matemáticos}
+\author{Rafael Alves}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Criar uma Matriz}
+\subsection{Com Parêntesis}
+
+$  % TUDO O QUE FOR MATEMATICO TEM DE TER ANTES E DEPOIS $
+\left(\begin{array}{ccc}
+    a   &   b   &   f\\
+    c   &   d   &   g\\
+    h   &   i   &   j
+\end{array}\right)
+$
+
+\subsection{Com Chavetas Retas}
+$  % TUDO O QUE FOR MATEMATICO TEM DE TER ANTES E DEPOIS $
+\left[\begin{array}{ccc}
+    a   &   b   &   f\\
+    c   &   d   &   g\\
+    h   &   i   &   j
+\end{array}\right]
+$
+
+\subsection{Determinante}
+$ 
+\left|\begin{array}{ccc}
+    a   &   b   &   f\\
+    c   &   d   &   g\\
+    h   &   i   &   j
+\end{array}\right|
+$
+
+\subsection{Sistema}
+\vspace{1cm}
+$ 
+\left\{\begin{array}{ccc}
+    a   &   b   &   f\\
+    c   &   d   &   g\\
+    h   &   i   &   j
+\end{array}\right\}
+$
+\vspace{1cm}
+
+\section{Equações Matemáticas}
+\begin{center}
+$ 
+\left(\begin{array}{ccc}
+    \frac{1}{2}     &       b       &   x^2\\
+    c               &   \sqrt{4}    &   g\\
+    \sqrt[3]{8}     &       i       &   \displaystyle\lim_{x\rightarrow 0}f(x)
+\end{array}\right)
+$
+\end{center}
+
+
+\begin{equation}
+    y=x^2+1
+\end{equation}
+
+\begin{equation}
+    \displaystyle\int_0^1 f(x)dx
+\end{equation}
+
+\pagebreak
+\section{Elementos Matemáticos}
+
+\begin{itemize} % OU ENUMERATE
+    \item [] 1) Sinal da Soma: + ou $+$
+    \item [] 2) Sinal da Diferença: - ou $-$
+    \item [] 3) Sinal da Multiplicação: $x\cdot y$ ou $x\times y$
+    \item [] 4) Sinal da Divisão: $\frac{1}{2}$ ou $\dfrac{1}{2}$ ou $1\div 2$
+\end{itemize}
+
+
+
+\end{document}
