@@ -1,15 +1,15 @@
-\documentclass[12pt,a4paper,twoside]{report}
+\documentclass[12pt,a4paper]{article}
 %\documentclass[a4paper,12pt]{report}
 \usepackage[utf8]{inputenc} % Pacote para acentuação
 \usepackage[portuguese]{babel} % Para quem vai escrever em PT-PT
-\usepackage[a4paper,width=150mm,top=20mm,bottom=20mm]{geometry}
+\usepackage[a4paper,lmargin=2cm,tmargin=1cm,rmargin=2cm,bmargin=2cm]{geometry}
 %\usepackage[lmargin=2cm,tmargin=2cm,rmargin=2cm,bmargin=2cm]{geometry}
 \usepackage{indentfirst} % Identacao primeiro paragrafo
 \usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont,mathtools} % Pacotes matematicos
 
 
 
-\title{Fórmulas e Elementos Matemáticos}
+\title{Ambientes Matemáticos}
 \author{Rafael Alves}
 \date{\today}
 
@@ -19,52 +19,52 @@
 \section{Criar uma Matriz}
 \subsection{Com Parêntesis}
 
-$  % TUDO O QUE FOR MATEMATICO TEM DE TER ANTES E DEPOIS $
+$$  % TUDO O QUE FOR MATEMATICO TEM DE TER ANTES E DEPOIS $
 \left(\begin{array}{ccc}
     a   &   b   &   f\\
     c   &   d   &   g\\
     h   &   i   &   j
 \end{array}\right)
-$
+$$
 
 \subsection{Com Chavetas Retas}
-$  % TUDO O QUE FOR MATEMATICO TEM DE TER ANTES E DEPOIS $
+$$  % TUDO O QUE FOR MATEMATICO TEM DE TER ANTES E DEPOIS $
 \left[\begin{array}{ccc}
     a   &   b   &   f\\
     c   &   d   &   g\\
     h   &   i   &   j
 \end{array}\right]
-$
+$$
 
 \subsection{Determinante}
-$ 
+$$
 \left|\begin{array}{ccc}
     a   &   b   &   f\\
     c   &   d   &   g\\
     h   &   i   &   j
 \end{array}\right|
-$
+$$
 
 \subsection{Sistema}
 \vspace{1cm}
-$ 
+$$
 \left\{\begin{array}{ccc}
     a   &   b   &   f\\
     c   &   d   &   g\\
     h   &   i   &   j
 \end{array}\right\}
-$
+$$
 \vspace{1cm}
 
 \section{Equações Matemáticas}
 \begin{center}
-$ 
+$$
 \left(\begin{array}{ccc}
     \frac{1}{2}     &       b       &   x^2\\
     c               &   \sqrt{4}    &   g\\
     \sqrt[3]{8}     &       i       &   \displaystyle\lim_{x\rightarrow 0}f(x)
 \end{array}\right)
-$
+$$
 \end{center}
 
 
@@ -76,7 +76,7 @@ $
     \displaystyle\int_0^1 f(x)dx
 \end{equation}
 
-\pagebreak
+
 \section{Elementos Matemáticos}
 
 \begin{itemize} % OU ENUMERATE
@@ -87,5 +87,22 @@ $
 \end{itemize}
 
 
+\vspace{2cm}
+A fórmula fundamental da trigonometria, onde surgem os valores de $\sin \alpha$ e de $\cos \alpha$, apresenta o seguinte resultado:
 
+\begin{equation}
+    \sin^2 \alpha + \cos^2 \alpha =1
+    \label{fft}
+\end{equation}
+
+A equação \ref{fft} pode ser alterada dividindo todos os termos por:
+\[\cos^2 \alpha\]
+
+resultando em:
+
+$$
+\tan^2 \alpha +1 = \frac{1}{\cos^2\alpha}
+$$
+
+ 
 \end{document}
